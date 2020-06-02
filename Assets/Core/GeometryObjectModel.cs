@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
 using UnityEngine;
 using UniRx;
 using Core.Enums;
@@ -23,17 +25,21 @@ namespace Core
         /// I can define type of shape by using GetComponent<T>(), but it - not optimal
         /// </summary>
         public ETypeObject Type;
-        
-         
+
+
 
         // Start is called before the first frame update
         private void Start()
-        {
-            Observable.EveryUpdate().Subscribe(x =>
-            //where + select for go
+        {                
+            GameDataProvider gdp = GameObject.Find("GO").GetComponent<GameDataProvider>();
+            CubeColor = gdp.GetColor(Type, ClickCount);
+            gameObject.GetComponent<MeshRenderer>().material.color = CubeColor;
+            
+           Observable.Interval(TimeSpan.FromSeconds(gdp.Delay)).Subscribe( x =>
             {
-                Observable.Timer(TimeSpan.FromSeconds(x));
-                //change color to color from list
+                CubeColor = gdp.GetColor(Type, ClickCount);
+                gameObject.GetComponent<MeshRenderer>().material.color = CubeColor;
+
             }).AddTo(this);
         }
     }

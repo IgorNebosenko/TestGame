@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8561267715180750613}
   m_Layer: 0
   m_Name: Capsule1
-  m_TagString: Untagged
+  m_TagString: GeometryObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,3 +108,4 @@ MonoBehaviour:
   ClickCount: 0
   CubeColor: {r: 0, g: 0, b: 0, a: 0}
   Type: 0
+  RootMaterial: {fileID: 2100000, guid: 0a12a64a3a227bf4a8c214f263a472b9, type: 2}

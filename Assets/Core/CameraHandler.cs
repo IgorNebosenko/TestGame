@@ -45,10 +45,17 @@ namespace Core
                     {
                         case "Terrain":
                             var rnd = new System.Random();
-                            int i = rnd.Next(0, refLoadBundle.lstGO.Count);
+                            int i;
 
-                            GameObject.Instantiate(refLoadBundle.lstGO[i],
-                                hit.point, Quaternion.identity);
+                            Object obj = null;
+                            while (obj == null)
+                            {
+                                i = rnd.Next(0, refLoadBundle.lstGO.Count - 1);
+                                obj = refLoadBundle.lstGO[i];
+                            }
+
+                            GameObject.Instantiate(obj,
+                                hit.point, Random.rotation);
                             break;
                         case "GeometryObject":
                             ++hit.transform.gameObject.GetComponent<GeometryObjectModel>().ClickCount;

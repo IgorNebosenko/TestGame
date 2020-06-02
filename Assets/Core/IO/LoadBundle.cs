@@ -11,13 +11,12 @@ namespace Core.IO
     public class LoadBundle : MonoBehaviour
     {
         public List<Object> lstGO { get; private set; }
-        private int version = 0;
-        
+
         public List<KeyValuePair<string, List<string>>> bundlesListNames { get; private set; }
         private DataContractJsonSerializer serializer;
 
         // Start is called before the first frame update
-        private async void Start()
+        private void Start()
         {
             bundlesListNames = new List<KeyValuePair<string,List<string>>>();
             serializer = new DataContractJsonSerializer(typeof(List<KeyValuePair<string, List<string>>>));
@@ -46,8 +45,6 @@ namespace Core.IO
                 foreach(var b in ab.Value)
                     lstGO.Add(bundle.LoadAsset(b));
             }
-        
-            Debug.Log(lstGO.Count);
         }
 
 

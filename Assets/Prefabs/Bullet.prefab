@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 1568182620107834009}
   - component: {fileID: 773659714894829563}
   - component: {fileID: 7851106021519265945}
+  - component: {fileID: 9170020410536907082}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: GeometryObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,3 +92,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9170020410536907082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5071726260498861508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84f3cf4ddc16ecb4eab96ac169e6a1c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClickCount: 0
+  CubeColor: {r: 0, g: 0, b: 0, a: 0}
+  Type: 2
+  RootMaterial: {fileID: 2100000, guid: 0a12a64a3a227bf4a8c214f263a472b9, type: 2}

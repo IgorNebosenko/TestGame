@@ -107,3 +107,4 @@ MonoBehaviour:
   ClickCount: 0
   CubeColor: {r: 0, g: 0, b: 0, a: 0}
   Type: 0
+  RootMaterial: {fileID: 2100000, guid: 0a12a64a3a227bf4a8c214f263a472b9, type: 2}
