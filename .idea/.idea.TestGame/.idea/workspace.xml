@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2d09e471-d510-4879-9edc-e57a3dec70f7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,22 +29,33 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Core/IO/StaticBundles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/IO/LoadBundle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/CameraHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Core/GameData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/GeometryObjectModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityWinRTBridge/Thread.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/ClickColorData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/CreateAssetBundles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/GameData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/DebugScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/data.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Core/Enums/ETypeObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Core/CameraHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Core/Enums/EColorState.cs" />
         <option value="$PROJECT_DIR$/Assets/Core/GeometryObjectModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Core/ClickColorData.cs" />
         <option value="$PROJECT_DIR$/Assets/Core/GameData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Core/IO/StaticBundles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/StaticBundles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/CreateAssetBundles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Core/DebugScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Core/IO/DataLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/data.json" />
+        <option value="$PROJECT_DIR$/Assets/Core/IO/LoadBundle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Core/Core.cs" />
+        <option value="$PROJECT_DIR$/Assets/Core/CameraHandler.cs" />
       </list>
     </option>
   </component>
@@ -72,12 +101,23 @@
       <workItem from="1591013180597" duration="1903000" />
       <workItem from="1591039197645" duration="182000" />
       <workItem from="1591095255627" duration="1776000" />
-      <workItem from="1591101402527" duration="1367000" />
+      <workItem from="1591101402527" duration="11414000" />
     </task>
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

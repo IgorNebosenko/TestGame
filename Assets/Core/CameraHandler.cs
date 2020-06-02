@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Core.IO;
 using JetBrains.Annotations;
 using UnityEngine;
 
@@ -12,6 +13,7 @@ namespace Core
     public class CameraHandler : MonoBehaviour
     {
         public Transform item;
+        public LoadBundle refLoadBundle;
         
         private Camera cam;
         private RaycastHit hit;
@@ -42,10 +44,10 @@ namespace Core
                     switch (hit.transform.tag)
                     {
                         case "Terrain":
-                            //Load
+                            var rnd = new System.Random();
+                            int i = rnd.Next(0, refLoadBundle.lstGO.Count);
 
-
-                            GameObject.Instantiate(item,
+                            GameObject.Instantiate(refLoadBundle.lstGO[i],
                                 hit.point, Quaternion.identity);
                             break;
                         case "GeometryObject":
